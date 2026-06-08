@@ -1,0 +1,135 @@
+{
+  "project_info": {
+    "name": "Devishiv Hospital",
+    "type": "marketing_site",
+    "domain": "Healthcare / Medical",
+    "location": "B-328, Sector B Marg, near Mount, Mahanagar, Lucknow, Uttar Pradesh 226006",
+    "contact": {
+      "toll_free": "1800 274 8000",
+      "reception": ["0522-2622080", "0522-2614700"],
+      "hours": "Open 24 Hours (Emergency Services Available)"
+    },
+    "certifications": ["NABH Certified Entry Level"]
+  },
+  "design_system": {
+    "theme": "light",
+    "archetype": "Archetype 1: Organic & Earthy (Adapted for Medical Trust)",
+    "emotion": "Empathetic, clean, highly trustworthy, professional, calming",
+    "colors": {
+      "primary": "#0A4273",
+      "primary_foreground": "#FFFFFF",
+      "secondary": "#7ACBA5",
+      "secondary_foreground": "#0A4273",
+      "accent": "#E4F4E4",
+      "accent_foreground": "#083358",
+      "destructive": "#E11D48",
+      "background": "#FFFFFF",
+      "surface": "#F8FAFC",
+      "surface_alt": "#F0FDF4",
+      "text_main": "#0F172A",
+      "text_muted": "#64748B",
+      "border": "#E2E8F0",
+      "emergency": "#DC2626"
+    },
+    "typography": {
+      "heading_font": "Outfit",
+      "body_font": "Inter",
+      "scale": {
+        "h1": "text-4xl sm:text-5xl lg:text-6xl tracking-tight leading-none font-semibold",
+        "h2": "text-3xl sm:text-4xl lg:text-5xl tracking-tight leading-tight font-medium",
+        "h3": "text-2xl sm:text-3xl tracking-tight font-medium",
+        "h4": "text-xl sm:text-2xl font-medium",
+        "body": "text-base sm:text-lg leading-relaxed",
+        "small": "text-sm uppercase tracking-[0.1em] font-medium"
+      }
+    },
+    "spacing_and_layout": {
+      "container": "max-w-7xl mx-auto px-6 lg:px-8",
+      "section_padding": "py-20 md:py-32",
+      "bento_grid": "grid grid-cols-1 md:grid-cols-8 lg:grid-cols-12 gap-6 md:gap-8",
+      "border_radius": "rounded-2xl md:rounded-3xl",
+      "surfaces": "Solid flat backgrounds with subtle 1px border (border-border). Avoid heavy shadows or glassmorphism in clinical context to ensure crisp data visibility."
+    },
+    "components": {
+      "buttons": "Rounded-full or large rounded-lg. High contrast. Primary uses #0A4273, secondary uses #7ACBA5. Hover states must darken slightly. Always add transition-all duration-300.",
+      "cards": "Cardless aesthetic preferred. Use raw divs with bg-surface, rounded-3xl, and generous internal padding (p-8 to p-12).",
+      "inputs": "Shadcn defaults customized with rounded-xl, bg-white, subtle border, focus:ring-primary focus:border-primary.",
+      "icons": "lucide-react"
+    }
+  },
+  "pages_and_structure": {
+    "navigation": {
+      "sticky_header": true,
+      "top_bar": "Highly visible red/primary background strip indicating '24x7 Emergency Services' with Toll-Free 1800 274 8000 and Reception numbers.",
+      "main_nav": "Logo, Home, About Us, Experts, Services, Contact. CTA: 'Book Appointment' button."
+    },
+    "home": {
+      "hero": "Asymmetrical layout. Large 'Outfit' headline emphasizing 24/7 care. 'NABH Certified' badge above H1. Dual CTAs: 'Call Emergency' (Red/Distinct) & 'View Specialties'. Image overlay max bg-black/20.",
+      "specialties_bento": "Tetris-style bento grid highlighting Ultrasound, Endoscopy, Gynaecology, Gastro Surgery, IVF.",
+      "testimonials": "Clean, highly padded text-focused slider or grid. Emphasize compassionate care."
+    },
+    "about_us": {
+      "mission": "Large text block (text-2xl to 4xl) highlighting patient safety, advanced diagnostics, and compassionate care. Use bg-surface_alt."
+    },
+    "our_experts": {
+      "layout": "Grid (grid-cols-1 sm:grid-cols-2 lg:grid-cols-3). Clean, professional doctor cards with image, name, and specialty.",
+      "doctors": [
+        {"name": "Dr. Renu Lakhtakia", "specialty": "Gynaecologist", "image_key": "dr_renu"},
+        {"name": "Dr. Sanjai Srivastava", "specialty": "Gastro Surgeon", "image_key": "dr_sanjai"},
+        {"name": "Dr. Sanjay Lakhtakia", "specialty": "Endoscopist / Sonologist", "image_key": "dr_sanjay"},
+        {"name": "Dr. Ashutosh Mishra", "specialty": "Child Specialist", "image_key": "dr_ashutosh"},
+        {"name": "Dr. Ranjan Kumar", "specialty": "Orthopaedics", "image_key": "dr_ranjan"}
+      ]
+    },
+    "scope_of_services": {
+      "layout": "Use Shadcn Tabs or a clean 3-column layout. Categories: Clinical OPD+IPD, Diagnostic Services, Allied/Support Services."
+    },
+    "contact_and_location": {
+      "layout": "Split section (Text/Form on left, Details/Map on right).",
+      "forms": {
+        "contact": "Fields: Name, Phone, Email, Message. Submit triggers sonner toast.",
+        "appointment": "Fields: Select Doctor (dropdown), Date (DayPicker calendar), Time Slot, Patient Name, Phone. Submit triggers sonner toast."
+      }
+    },
+    "footer": {
+      "layout": "Dark background (bg-primary) with white text. Address, contact numbers, hours, quick links, and large hospital name branding."
+    }
+  },
+  "media_assets": {
+    "hero_building": {
+      "url": "https://images.pexels.com/photos/31836902/pexels-photo-31836902.jpeg",
+      "description": "Modern hospital building architecture exterior (use for hero background or about us)"
+    },
+    "compassionate_care": {
+      "url": "https://images.unsplash.com/photo-1581056771107-24ca5f033842",
+      "description": "Compassionate doctor with patient (use for mission or testimonials section)"
+    },
+    "dr_renu": {
+      "url": "https://images.pexels.com/photos/32254667/pexels-photo-32254667.jpeg",
+      "description": "Dr. Renu Lakhtakia (Gynaecologist)"
+    },
+    "dr_sanjai": {
+      "url": "https://images.unsplash.com/photo-1612349316228-5942a9b489c2",
+      "description": "Dr. Sanjai Srivastava (Gastro Surgeon)"
+    },
+    "dr_sanjay": {
+      "url": "https://images.unsplash.com/photo-1612531385446-f7e6d131e1d0",
+      "description": "Dr. Sanjay Lakhtakia (Endoscopist)"
+    },
+    "dr_ashutosh": {
+      "url": "https://images.unsplash.com/photo-1612349317150-e413f6a5b16d",
+      "description": "Dr. Ashutosh Mishra (Child Specialist)"
+    },
+    "dr_ranjan": {
+      "url": "https://images.unsplash.com/photo-1612531386530-97286d97c2d2",
+      "description": "Dr. Ranjan Kumar (Orthopaedics)"
+    }
+  },
+  "technical_requirements": {
+    "components_to_install": [
+      "button", "input", "textarea", "select", "tabs", "calendar", "popover", "toast", "sonner"
+    ],
+    "testing": "All interactive elements (buttons, inputs, tabs) MUST include a 'data-testid' attribute (e.g., data-testid='contact-submit-button').",
+    "accessibility": "Ensure high contrast. Form inputs must have labels. Images must have alt text."
+  }
+}

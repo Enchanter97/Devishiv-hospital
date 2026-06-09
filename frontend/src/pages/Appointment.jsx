@@ -65,23 +65,23 @@ export default function Appointment() {
     return (
       <div data-testid="appointment-success" className="py-24">
         <div className="max-w-2xl mx-auto px-6 lg:px-8 text-center">
-          <div className="h-16 w-16 rounded-full bg-[#E4F4E4] grid place-items-center mx-auto mb-6">
-            <Check className="h-8 w-8 text-[#0A4273]" />
+          <div className="h-16 w-16 rounded-full bg-[#D1FAE5] grid place-items-center mx-auto mb-6">
+            <Check className="h-8 w-8 text-[#0D9B6B]" />
           </div>
-          <h1 className="font-display text-3xl md:text-4xl font-medium text-[#0F172A] mb-3">
+          <h1 className="font-display text-3xl md:text-4xl font-medium text-[#0A0F0D] mb-3">
             Appointment requested
           </h1>
           <p className="text-slate-600 mb-8 leading-relaxed">
             Thank you, <strong>{done.patient_name}</strong>. Your appointment with <strong>{done.doctor}</strong> on <strong>{done.date}</strong> at <strong>{done.time_slot}</strong> has been recorded. Our reception will call <strong>{done.phone}</strong> shortly to confirm.
           </p>
           <div className="rounded-2xl border border-border p-6 bg-surface text-left mb-8">
-            <div className="text-xs uppercase tracking-[0.18em] text-[#7ACBA5] font-medium mb-2">Reference ID</div>
-            <div className="font-mono text-sm text-[#0F172A] break-all">{done.id}</div>
+            <div className="text-xs uppercase tracking-[0.18em] text-[#0D9B6B] font-medium mb-2">Reference ID</div>
+            <div className="font-mono text-sm text-[#0A0F0D] break-all">{done.id}</div>
           </div>
           <div className="flex flex-col sm:flex-row gap-3 justify-center">
             <Button
               onClick={() => navigate("/")}
-              className="rounded-full bg-[#0A4273] hover:bg-[#083358] text-white h-12 px-7"
+              className="rounded-full bg-[#0D9B6B] hover:bg-[#083358] text-white h-12 px-7"
             >
               Back to home
             </Button>
@@ -91,7 +91,7 @@ export default function Appointment() {
                 setDone(null);
                 setForm({ patient_name: "", phone: "", email: "", doctor: "", date: undefined, time_slot: "", reason: "" });
               }}
-              className="rounded-full h-12 px-7 border-[#0A4273] text-[#0A4273]"
+              className="rounded-full h-12 px-7 border-[#0D9B6B] text-[#0D9B6B]"
             >
               Book another
             </Button>
@@ -103,13 +103,13 @@ export default function Appointment() {
 
   return (
     <div data-testid="appointment-page">
-      <section className="bg-surface py-20 md:py-24">
+      <section className="bg-[#34D399] py-20 md:py-24">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
-          <div className="text-xs uppercase tracking-[0.2em] text-[#7ACBA5] font-medium mb-4">Book an appointment</div>
-          <h1 className="font-display text-4xl sm:text-5xl lg:text-6xl font-semibold tracking-tight text-[#0F172A] max-w-4xl leading-tight">
+          <div className="text-xs uppercase tracking-[0.2em] text-black font-medium mb-4">Book an appointment</div>
+          <h1 className="font-display text-4xl sm:text-5xl lg:text-6xl font-semibold tracking-tight text-[#0A0F0D] max-w-4xl leading-tight">
             Schedule a consultation with our specialists.
           </h1>
-          <p className="text-base sm:text-lg text-slate-600 max-w-2xl mt-6">
+          <p className="text-black sm:text-lg text-slate-600 max-w-2xl mt-6">
             Pick a doctor, choose a convenient date and time, and we&apos;ll call to confirm. For emergencies, please dial <span className="text-[#DC2626] font-semibold">1800 274 8000</span> directly.
           </p>
         </div>
@@ -234,7 +234,7 @@ export default function Appointment() {
               type="submit"
               disabled={loading}
               data-testid="appt-submit"
-              className="rounded-full bg-[#0A4273] hover:bg-[#083358] text-white h-12 px-7 w-full sm:w-auto"
+              className="rounded-full bg-[#0D9B6B] hover:bg-[#083358] text-white h-12 px-7 w-full sm:w-auto"
             >
               {loading ? "Booking..." : "Request appointment"}
             </Button>
@@ -244,3 +244,4 @@ export default function Appointment() {
     </div>
   );
 }
+

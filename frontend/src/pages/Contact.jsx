@@ -37,10 +37,10 @@ export default function Contact() {
 
   return (
     <div data-testid="contact-page">
-      <section className="bg-surface py-20 md:py-24">
+      <section className="bg-[#34D399] py-20 md:py-24">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
-          <div className="text-xs uppercase tracking-[0.2em] text-[#7ACBA5] font-medium mb-4">Contact & location</div>
-          <h1 className="font-display text-4xl sm:text-5xl lg:text-6xl font-semibold tracking-tight text-[#0F172A] max-w-4xl leading-tight">
+          <div className="text-xs uppercase tracking-[0.2em] text-black font-medium mb-4">Contact & location</div>
+          <h1 className="font-display text-4xl sm:text-5xl lg:text-6xl font-semibold tracking-tight text-[#0A0F0D] max-w-4xl leading-tight">
             We&apos;re here, 24x7 — let&apos;s talk.
           </h1>
         </div>
@@ -50,7 +50,7 @@ export default function Contact() {
         <div className="max-w-7xl mx-auto px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-2 gap-12">
           {/* Contact form */}
           <div className="bg-white rounded-3xl border border-border p-8 md:p-10">
-            <h2 className="font-display text-2xl md:text-3xl font-medium text-[#0F172A] mb-2">Send us a message</h2>
+            <h2 className="font-display text-2xl md:text-3xl font-medium text-[#0A0F0D] mb-2">Send us a message</h2>
             <p className="text-slate-600 mb-8">Have a question or need to share medical history before a visit? Use the form below.</p>
 
             <form onSubmit={submit} className="space-y-5" data-testid="contact-form">
@@ -106,7 +106,7 @@ export default function Contact() {
                 type="submit"
                 disabled={loading}
                 data-testid="contact-submit"
-                className="rounded-full bg-[#0A4273] hover:bg-[#083358] text-white h-12 px-7 w-full sm:w-auto"
+                className="rounded-full bg-[#0D9B6B] hover:bg-[#083358] text-white h-12 px-7 w-full sm:w-auto"
               >
                 {loading ? "Sending..." : "Send message"}
               </Button>
@@ -115,25 +115,25 @@ export default function Contact() {
 
           {/* Details + Map */}
           <div className="space-y-6">
-            <div className="bg-[#0A4273] text-white rounded-3xl p-8 md:p-10">
+            <div className="bg-[#0D9B6B] text-white rounded-3xl p-8 md:p-10">
               <h3 className="font-display text-2xl font-medium mb-6">Visit us</h3>
               <ul className="space-y-5">
                 <li className="flex items-start gap-3">
-                  <MapPin className="h-5 w-5 mt-0.5 text-[#7ACBA5] flex-shrink-0" />
+                  <MapPin className="h-5 w-5 mt-0.5 text-[#0D9B6B] flex-shrink-0" />
                   <span className="text-white/90 leading-relaxed">{HOSPITAL.address}</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <Phone className="h-5 w-5 mt-0.5 text-[#7ACBA5] flex-shrink-0" />
+                  <Phone className="h-5 w-5 mt-0.5 text-[#0D9B6B] flex-shrink-0" />
                   <div>
                     <div className="text-white/90">Toll-Free: <span className="font-semibold">{HOSPITAL.tollFree}</span></div>
                     <div className="text-white/90">Reception: {HOSPITAL.phones.join(", ")}</div>
                   </div>
                 </li>
                 <li className="flex items-start gap-3">
-                  <Clock className="h-5 w-5 mt-0.5 text-[#7ACBA5] flex-shrink-0" />
+                  <Clock className="h-5 w-5 mt-0.5 text-[#0D9B6B] flex-shrink-0" />
                   <div>
                     <div className="text-white/90 font-semibold">Open 24 Hours</div>
-                    <div className="text-sm text-[#7ACBA5]">Emergency services available round-the-clock</div>
+                    <div className="text-sm text-[#0D9B6B]">Emergency services available round-the-clock</div>
                   </div>
                 </li>
               </ul>
@@ -156,3 +156,4 @@ export default function Contact() {
     </div>
   );
 }
+

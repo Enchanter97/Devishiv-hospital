@@ -19,7 +19,7 @@ export default function Header() {
   return (
     <header className="sticky top-0 z-50 w-full">
       {/* Emergency top strip */}
-      <div className="bg-[#0A4273] text-white text-sm" data-testid="emergency-strip">
+      <div className="bg-[#0A0F0D] text-white text-sm" data-testid="emergency-strip">
         <div className="max-w-7xl mx-auto px-6 lg:px-8 py-2 flex flex-wrap items-center justify-between gap-2">
           <div className="flex items-center gap-2">
             <span className="inline-flex h-2 w-2 rounded-full bg-red-500 pulse-emergency"></span>
@@ -29,7 +29,7 @@ export default function Header() {
             <a
               href={`tel:${HOSPITAL.tollFree.replace(/\s/g, "")}`}
               data-testid="header-tollfree-link"
-              className="inline-flex items-center gap-2 hover:text-[#7ACBA5] transition-colors"
+              className="inline-flex items-center gap-2 hover:text-[#34D399] transition-colors"
             >
               <Phone className="h-3.5 w-3.5" />
               <span>Toll-Free: {HOSPITAL.tollFree}</span>
@@ -38,7 +38,7 @@ export default function Header() {
             <a
               href={`tel:${HOSPITAL.phones[0]}`}
               data-testid="header-reception-link"
-              className="hidden md:inline hover:text-[#7ACBA5] transition-colors"
+              className="hidden md:inline hover:text-[#34D399] transition-colors"
             >
               Reception: {HOSPITAL.phones[0]}, {HOSPITAL.phones[1]}
             </a>
@@ -50,12 +50,12 @@ export default function Header() {
       <div className="bg-white/95 backdrop-blur border-b border-border">
         <div className="max-w-7xl mx-auto px-6 lg:px-8 h-20 flex items-center justify-between">
           <Link to="/" data-testid="logo-link" className="flex items-center gap-3 group">
-            <div className="h-11 w-11 rounded-xl bg-[#0A4273] text-white grid place-items-center group-hover:bg-[#083358] transition-colors">
+            <div className="h-11 w-11 rounded-xl bg-[#0D9B6B] text-white grid place-items-center group-hover:bg-[#0a8259] transition-colors">
               <Stethoscope className="h-6 w-6" />
             </div>
             <div className="leading-tight">
-              <div className="font-display text-xl font-semibold text-[#0A4273]">Devishiv Hospital</div>
-              <div className="text-[11px] uppercase tracking-[0.18em] text-[#7ACBA5] font-medium">NABH Certified</div>
+              <div className="font-display text-xl font-semibold text-[#0A0F0D]">Devishiv Hospital</div>
+              <div className="text-[11px] uppercase tracking-[0.18em] text-[#0D9B6B] font-medium">NABH Certified</div>
             </div>
           </Link>
 
@@ -67,7 +67,7 @@ export default function Header() {
                 data-testid={`nav-${l.label.toLowerCase()}`}
                 className={({ isActive }) =>
                   `px-4 py-2 text-sm font-medium rounded-full transition-colors ${
-                    isActive ? "bg-[#E4F4E4] text-[#0A4273]" : "text-slate-700 hover:bg-slate-100"
+                    isActive ? "bg-[#D1FAE5] text-[#0D9B6B]" : "text-slate-700 hover:bg-slate-100"
                   }`
                 }
               >
@@ -88,7 +88,7 @@ export default function Header() {
             <Button
               data-testid="header-book-appointment"
               onClick={() => navigate("/appointment")}
-              className="rounded-full bg-[#0A4273] hover:bg-[#083358] text-white px-6 transition-all"
+              className="rounded-full bg-[#0D9B6B] hover:bg-[#0a8259] text-white px-6 transition-all"
             >
               Book Appointment
             </Button>
@@ -116,7 +116,7 @@ export default function Header() {
                   data-testid={`mobile-nav-${l.label.toLowerCase()}`}
                   className={({ isActive }) =>
                     `px-3 py-3 rounded-lg text-sm font-medium ${
-                      isActive ? "bg-[#E4F4E4] text-[#0A4273]" : "text-slate-700 hover:bg-slate-100"
+                      isActive ? "bg-[#D1FAE5] text-[#0D9B6B]" : "text-slate-700 hover:bg-slate-100"
                     }`
                   }
                 >
@@ -129,7 +129,7 @@ export default function Header() {
                   navigate("/appointment");
                 }}
                 data-testid="mobile-book-appointment"
-                className="mt-3 rounded-full bg-[#0A4273] hover:bg-[#083358] text-white"
+                className="mt-3 rounded-full bg-[#0D9B6B] hover:bg-[#0a8259] text-white"
               >
                 Book Appointment
               </Button>

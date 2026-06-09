@@ -4,7 +4,7 @@ export const DOCTORS = [
     name: "Dr. Renu Lakhtakia",
     credentials: "MBBS, MD, MRCOG (London)",
     specialty: "Obstetrician & Gynaecologist",
-    image: "https://images.pexels.com/photos/32254667/pexels-photo-32254667.jpeg",
+    image: "./images/DrRenu.png",
     bio: "Internationally trained women's health expert with deep experience in obstetrics, fertility care and gynaecologic surgery.",
   },
   {
@@ -20,7 +20,7 @@ export const DOCTORS = [
     name: "Dr. Sanjay Lakhtakia",
     credentials: "MD (Medicine)",
     specialty: "Endoscopist & Sonologist",
-    image: "https://images.unsplash.com/photo-1612531385446-f7e6d131e1d0",
+    image: "./images/Drsanjay.png",
     bio: "Experienced internal medicine consultant offering precise diagnostic endoscopy and ultrasound services.",
   },
   {
